@@ -1,0 +1,78 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--green:#08783f;--green-dark:#07572f;--green-soft:#eaf4ee;--ink:#173127;--muted:#66766d;--paper:#fbfcfa;--line:#d8e2dc;--max:1160px}
+html{scroll-behavior:smooth}body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(var(--max),calc(100% - 48px));margin:auto}
+.topbar{height:34px;background:var(--green-dark);color:#e7f2eb;font-size:10px;letter-spacing:.04em}.topbar-inner{height:100%;display:flex;align-items:center;justify-content:space-between}.topbar a{color:#d7f0df}
+header{background:rgba(251,252,250,.97);border-bottom:1px solid var(--line)}.nav{height:94px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px}.brand img{width:43px;height:54px;object-fit:contain}.brand b,.brand small{display:block}.brand b{font:700 15px "Libre Baskerville",serif;letter-spacing:.05em}.brand small{font-size:8px;letter-spacing:.2em;color:#718078;margin-top:3px}
+nav{display:flex;gap:31px;align-items:center;font-size:12px;font-weight:600;color:#41554b}nav a:hover{color:var(--green)}.nav-cta{border:1px solid var(--green);padding:10px 19px;color:var(--green);border-radius:3px}.nav-cta:hover{background:var(--green);color:white}
+.menu{display:none;border:0;background:none}.menu span{display:block;width:23px;height:2px;background:var(--ink);margin:5px}
+.hero{padding:75px 0 85px;background:var(--paper)}.hero-grid{display:grid;grid-template-columns:1fr 1fr;min-height:535px;border:1px solid var(--line)}
+.hero-photo{position:relative;min-height:535px;background-image:linear-gradient(0deg,rgba(4,35,20,.55),rgba(4,35,20,.05) 55%),url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85");background-size:cover;background-position:center}.photo-overlay{position:absolute;inset:0;border:13px solid rgba(255,255,255,.88);pointer-events:none}.photo-caption{position:absolute;bottom:35px;left:35px;color:white;text-shadow:0 2px 15px rgba(0,0,0,.3)}.photo-caption span,.photo-caption small{display:block;letter-spacing:.18em;font-size:9px}.photo-caption strong{display:block;font:700 29px "Libre Baskerville",serif;letter-spacing:.04em}.photo-caption small{margin-top:5px}
+.hero-copy{padding:70px 60px;display:flex;justify-content:center;flex-direction:column;background:white}.eyebrow{font-size:9px;letter-spacing:.22em;font-weight:700;color:#66786e}.eyebrow.green{color:var(--green)}h1,h2{font-family:"Libre Baskerville",serif;font-weight:700;color:var(--ink);letter-spacing:-.045em}h1{font-size:clamp(42px,5vw,67px);line-height:1.08;margin:19px 0 24px}h1 em,h2 em{font-style:normal;color:var(--green)}.rule{height:1px;width:48px;background:var(--green);margin-bottom:25px}.hero-copy p{font-size:14px;color:var(--muted);max-width:490px;margin-bottom:13px}.hero-copy strong{color:var(--ink)}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.button{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:3px;font-size:11px;font-weight:700;transition:.25s}.button.primary{background:var(--green);color:white}.button.primary:hover{background:var(--green-dark)}.button.secondary{border:1px solid #bdcbc3;color:var(--ink);background:white}.button.secondary:hover{border-color:var(--green);color:var(--green)}
+.intro{padding:125px 0;background:#fff}.intro-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;align-items:stretch}
+.side-label-wrap{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;min-height:100%;padding-right:35px}.section-logo{width:100%;max-width:270px;height:300px;object-fit:contain;object-position:left center;align-self:center;background:#fff}.side-label{white-space:nowrap}
+.intro h2,.section-head h2,.contact h2{font-size:clamp(39px,5vw,62px);line-height:1.08;margin:15px 0 26px}.intro p{max-width:700px;color:var(--muted);font-size:15px}.text-link{display:inline-block;margin-top:24px;font-size:11px;font-weight:700;color:var(--green);border-bottom:1px solid #9cc5ad;padding-bottom:4px}.text-link span{margin-left:10px}
+.proposal{padding:120px 0;background:var(--green-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:55px}.section-head p{max-width:330px;color:var(--muted);font-size:13px}.classic-cards{display:grid;grid-template-columns:repeat(3,1fr);background:white;border:1px solid var(--line)}.classic-cards article{padding:37px 32px;min-height:245px;border-right:1px solid var(--line);position:relative}.classic-cards article:last-child{border-right:0}.classic-cards article>span{font:700 11px "Libre Baskerville",serif;color:var(--green)}.classic-cards h3{font:700 22px "Libre Baskerville",serif;margin:45px 0 12px}.classic-cards p{color:var(--muted);font-size:12px;max-width:250px}
+.statement{padding:100px 0;background:white}.statement-inner{display:flex;align-items:center;gap:55px;max-width:950px}.statement img{width:100px;height:125px;object-fit:contain}.statement blockquote{font:700 clamp(27px,4vw,48px)/1.18 "Libre Baskerville",serif;letter-spacing:-.035em;margin-top:13px}.statement blockquote em{font-style:normal;color:var(--green)}
+.contact{padding:120px 0;background:var(--paper)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px}.contact p{font-size:15px;color:var(--muted);max-width:450px}.details{border-top:1px solid var(--line)}.details>div{display:flex;justify-content:space-between;gap:30px;padding:23px 0;border-bottom:1px solid var(--line)}.details span{font-size:8px;letter-spacing:.17em;color:#7a8a81}.details strong{text-align:right;font-size:12px;line-height:1.5}
+footer{background:var(--green-dark);color:#c4d6cb;padding:30px 0}.footer{display:flex;align-items:center;justify-content:space-between;font-size:9px}.footer .brand b{color:white}.footer .brand small{color:#aac0b3}.footer .brand img{filter:brightness(0) invert(1);width:32px;height:40px}.footer a{color:white}
+@media(max-width:850px){nav{display:none;position:absolute;top:128px;left:20px;right:20px;background:white;border:1px solid var(--line);padding:15px;flex-direction:column;align-items:stretch;gap:3px;box-shadow:0 15px 40px rgba(0,0,0,.08);z-index:20}nav.open{display:flex}.nav-cta{text-align:center}.menu{display:block}.hero-grid{grid-template-columns:1fr}.hero-photo{min-height:430px}.hero-copy{padding:60px 45px}.intro-grid,.contact-grid{grid-template-columns:1fr;gap:35px}.section-head{display:block}.section-head p{margin-top:20px}.classic-cards{grid-template-columns:1fr}.classic-cards article{border-right:0;border-bottom:1px solid var(--line)}.classic-cards article:last-child{border-bottom:0}.statement-inner{gap:35px}}
+@media(max-width:600px){.container{width:calc(100% - 32px)}.topbar-inner span:first-child{display:none}.topbar-inner{justify-content:space-between}.nav{height:82px}.hero{padding:35px 0 55px}.hero-photo{min-height:330px}.photo-overlay{border-width:8px}.hero-copy{padding:45px 25px}.hero h1{font-size:42px}.intro,.proposal,.contact{padding:85px 0}.intro h2,.section-head h2,.contact h2{font-size:40px}.statement{padding:75px 0}.statement-inner{flex-direction:column;align-items:flex-start}.statement blockquote{font-size:28px}.details>div{flex-direction:column;gap:7px}.details strong{text-align:left}.footer{flex-direction:column;gap:15px}}
+
+
+/* Propuesta académica */
+.program-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:52px;
+}
+.program-card{
+  position:relative;
+  min-height:245px;
+  padding:30px 28px 27px;
+  background:#fff;
+  border:1px solid #dce6df;
+  border-radius:8px;
+  box-shadow:0 8px 25px rgba(25,55,39,.045);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.program-card:hover{
+  transform:translateY(-4px);
+  border-color:#b9d1c1;
+  box-shadow:0 15px 35px rgba(25,55,39,.09);
+}
+.program-icon{
+  height:52px;
+  color:#126b43;
+  font-family:"Libre Baskerville",serif;
+  font-size:30px;
+  line-height:1;
+  display:flex;
+  align-items:center;
+  margin-bottom:15px;
+  letter-spacing:-.08em;
+}
+.program-card h3{
+  font-family:"Libre Baskerville",serif;
+  font-size:21px;
+  line-height:1.2;
+  color:#143126;
+  margin-bottom:12px;
+}
+.program-card p{
+  color:#66756d;
+  font-size:13px;
+  line-height:1.65;
+  max-width:285px;
+}
+@media(max-width:900px){
+  .program-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:600px){
+  .program-grid{grid-template-columns:1fr;gap:12px;}
+  .program-card{min-height:210px;}
+}
+
+@media(max-width:600px){.side-label-wrap{padding-right:0;min-height:auto;gap:25px}.section-logo{width:175px;height:205px;align-self:flex-start}}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<link rel="icon" type="image/png" href="images/logo-case.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Castleton School of English">
+<title>Castleton School of English | Luján</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>Castleton School of English</span>
+    <span>Luján</span>
+    <a href="tel:+542323331817">+54 2323 331817</a>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#inicio">
+      <img src="images/logo-case.png" alt="Castleton School of English">
+      <span><b>CASTLETON</b><small>SCHOOL OF ENGLISH</small></span>
+    </a>
+    <button class="menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav>
+      <a href="#instituto">El instituto</a>
+      <a href="#propuesta">Propuesta</a>
+      <a href="#contacto">Contacto</a>
+      <a class="nav-cta" href="https://wa.me/542323331817?text=Hola%20Castleton%2C%20quer%C3%ADa%20consultar%20por%20los%20cursos." target="_blank" rel="noopener">Consultar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div class="hero-photo">
+      <div class="photo-overlay"></div>
+      <div class="photo-caption">
+        <span>CASTLETON</span>
+        <strong>ENGLISH</strong>
+      </div>
+    </div>
+    <div class="hero-copy">
+      <h1>El idioma que<br><em>te abre puertas.</em></h1>
+      <div class="rule"></div>
+      <p>En Castleton School of English buscamos que aprender inglés sea una experiencia cercana, clara y útil. Un espacio para desarrollar habilidades, practicar y ganar confianza.</p>
+      <p>Estamos acompañándote en cada etapa de tu aprendizaje.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="https://wa.me/542323331817?text=Hola%20Castleton%2C%20quer%C3%ADa%20recibir%20informaci%C3%B3n." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        <a class="button secondary" href="#ubicacion">Conocer el instituto</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ubicacion" id="ubicacion">
+    <div class="ubicacion-container">
+
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps?q=Colón+818,+Luján,+Buenos+Aires,+Argentina&output=embed"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="ubicacion-info">
+            <span class="ubicacion-label">UBICACIÓN</span>
+
+            <h2>Encontranos en</h2>
+    <span>Colón 818 - Luján, Buenos Aires</span>
+            <div class="direccion">
+                <strong></strong>
+            
+            </div>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Colón+818,+Luján,+Buenos+Aires,+Argentina"
+                target="_blank"
+                class="btn-maps">
+                Ver en Google Maps
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.ubicacion {
+    padding: 80px 20px;
+    background: #f7f7f7;
+}
+
+.ubicacion-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.mapa {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.mapa iframe {
+    display: block;
+}
+
+.ubicacion-info {
+    padding: 20px;
+}
+
+.ubicacion-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.ubicacion-info h2 {
+    font-size: 42px;
+    margin: 12px 0 20px;
+    color: #111;
+}
+
+.ubicacion-info p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.direccion {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.direccion strong {
+    color: #111;
+}
+
+.direccion span {
+    color: #666;
+    line-height: 1.6;
+}
+
+.btn-maps {
+    display: inline-block;
+    padding: 14px 24px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-maps:hover {
+    transform: translateY(-2px);
+    background: #333;
+}
+
+@media (max-width: 800px) {
+    .ubicacion-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .ubicacion-info h2 {
+        font-size: 34px;
+    }
+
+    .mapa iframe {
+        height: 350px;
+    }
+}
+</style>
+
+<section class="proposal" id="propuesta">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow green">02 / PROPUESTA</span>
+        <h2>Una propuesta<br><em>para cada etapa.</em></h2>
+      </div>
+      <p>Opciones pensadas para acompañar distintos momentos y formas de aprender inglés.</p>
+    </div>
+
+    <div class="program-grid">
+      <article class="program-card">
+        <div class="program-icon">♧</div>
+        <h3>Inglés Kids</h3>
+        <p>Clases lúdicas y dinámicas para niños.</p>
+      </article>
+
+      <article class="program-card">
+        <div class="program-icon">⌂</div>
+        <h3>Inglés Teens</h3>
+        <p>Comunicación, proyectos e inglés real.</p>
+      </article>
+
+      <article class="program-card">
+        <div class="program-icon">•••</div>
+        <h3>Group English</h3>
+        <p>Para adolescentes y adultos — hablá con confianza.</p>
+      </article>
+
+      <article class="program-card">
+        <div class="program-icon">▤</div>
+        <h3>Book Club</h3>
+        <p>Leé. Pensá. Hablá. Un espacio para explorar historias e ideas en inglés.</p>
+      </article>
+
+      <article class="program-card">
+        <div class="program-icon">✎</div>
+        <h3>Writing Workshop</h3>
+        <p>Desarrollá tus habilidades de escritura en inglés.</p>
+      </article>
+
+      <article class="program-card">
+        <div class="program-icon">◉</div>
+        <h3>Preparación de<br>Exámenes Internacionales</h3>
+        <p>Entrenate para rendir los exámenes oficiales.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contacto">
+  <div class="container contact-grid">
+    <div>
+      <span class="eyebrow green">03 / CONTACTO</span>
+      <h2>¿Querés<br><em>conocernos?</em></h2>
+      <p>Escribinos para consultar por cursos, niveles, horarios y disponibilidad.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="https://wa.me/542323331817?text=Hola%20Castleton%2C%20quiero%20informaci%C3%B3n." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="button secondary" href="https://www.instagram.com/castletonenglishlujan/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="details">
+      <div><span>DIRECCIÓN</span><strong>Colón 818<br>Luján, Buenos Aires</strong></div>
+      <div><span>TELÉFONO</span><strong><a href="tel:+542323331817">+54 2323 331817</a></strong></div>
+      <div><span>HORARIOS PUBLICADOS</span><strong>Lunes a viernes<br>09:00–11:30 · 16:00–20:00</strong></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <div class="brand">
+ 
+      <span><b>CASTLETON</b><small>SCHOOL OF ENGLISH</small></span>
+    </div>
+    <span>© <span id="year"></span> · Luján, Buenos Aires</span>
+    <a href="#inicio">Volver arriba ↑</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
